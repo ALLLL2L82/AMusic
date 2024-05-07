@@ -19,7 +19,7 @@ from random import  choice, randint
   command(["المبرمج","مبرمج السورس","مبرمج","مطور السورس"])
 )
 async def huhh(client: Client, message: Message):
-    dev_id = 6094238403
+    dev_id = 6189288231
     dev = await client.get_users(dev_id)
     name = dev.first_name
     usrnam = dev.username
@@ -36,7 +36,7 @@ async def huhh(client: Client, message: Message):
                          name, url=f"https://t.me/{usrnam}"), 
                  ],[
                    InlineKeyboardButton(
-                        "•✯ ѕᴏᴜʀᴄᴇ ʙɪɢ ѕᴀᴍ ✯•", url=f"https://t.me/KKC8C"),
+                        "•✯ ѕᴏᴜʀᴄᴇ ʙɪɢ ѕᴀᴍ ✯•", url=f"https://t.me/O_U_Q1"),
                 ],
 
             ]
