@@ -1,5 +1,5 @@
 import math
-import config
+
 from ZeMusic import app 
 
 from pyrogram.types import InlineKeyboardButton
@@ -56,19 +56,16 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "—————————◉"
     buttons = [
                 [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
+            InlineKeyboardButton(text="𖣂 استئناف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف مؤقت 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="إستئناف ⌯", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="إيقاف مؤقت", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="⌯ إعاده", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 تخطي 𖣂", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="⌯ تخطي ⌯", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="⌯ توقف ⌯", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
         ],[
-            InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
+            InlineKeyboardButton(text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
     return buttons
 
@@ -76,14 +73,16 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="إستئناف ⌯", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="إيقاف مؤقت", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="⌯ إعاده", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 استئتاف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف مؤقت𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
-            InlineKeyboardButton(text="⌯ تخطي ⌯", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="⌯ توقف ⌯", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 تخطي 𖣂", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Stop|{chat_id}"),
         ],[
-            InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
+            InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
+        ],[
+            InlineKeyboardButton(text="𖣂 اضف البوت الي مجموعتك او قناتك 𖣂", url=f"https://t.me/{app.username}?startgroup=true")],
     ]
     return buttons
 
