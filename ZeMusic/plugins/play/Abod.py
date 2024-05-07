@@ -80,6 +80,22 @@ async def ihd(client: Client, message: Message):
         )
     )
 
+
+@app.on_message(command(["‹ المطور ›", "المطور"]) & filters.private)
+async def ihd(client: Client, message: Message):
+    rl = random.randint(2,90)
+    url = f"https://t.me/ssssl1vv/{rl}"
+    await client.send_photo(message.chat.id,url,caption="↯ : تم اختيار انمي اليك",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)
+                ],
+            ]
+        )
+     )
+    
 @app.on_message(command(["‹ اقتباسات ›", "اقتباسات"]) & filters.private)
 async def ihd(client: Client, message: Message):
     rl = random.randint(2,90)
