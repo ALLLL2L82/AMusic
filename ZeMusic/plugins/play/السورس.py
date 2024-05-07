@@ -19,7 +19,7 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/d64e882e61268d454c6c0.jpg",
-        caption = f"""<b>  ⌯ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 . .<b>\n<a href="https://t.me/O_U_QA"> ⌯ 𝚂𝙾𝚄𝚁𝙲𝙴 BIG sam ⛧</a></b>""",
+        caption = f"""<b>  ⌯ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 . .<b>\n<a href="https://t.me/O_U_Q1"> ⌯ 𝚂𝙾𝚄𝚁𝙲𝙴 BIG sam ⛧</a></b>""",
 reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -29,7 +29,7 @@ reply_markup=InlineKeyboardMarkup(
                     
                 
                     InlineKeyboardButton(
-                        "‹ السورس ›", url=f"https://t.me/O_U_QA"),         
+                        "‹ السورس ›", url=f"https://t.me/O_U_Q1"),         
                 ],
 
             ]
