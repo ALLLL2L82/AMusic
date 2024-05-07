@@ -19,7 +19,7 @@ from random import  choice, randint
   command(["المبرمج","مبرمج السورس","مبرمج","مطور السورس"])
 )
 async def huhh(client: Client, message: Message):
-    dev_id = 5145609515
+    dev_id = 6094238403
     dev = await client.get_users(dev_id)
     name = dev.first_name
     usrnam = dev.username
