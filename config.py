@@ -43,8 +43,8 @@ GIT_TOKEN = getenv(
 )  # Fill this variable if your upstream repository is private
 
 CHANNEL_NAME = getenv("CHANNEL_NAME", "𝚂𝚄𝙾𝚁𝙲𝙴 big Sam")
-CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/KKC8C")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Y_o_V")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/O_U_Q1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/O_U_QA")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -92,7 +92,7 @@ SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
 YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/d64e882e61268d454c6c0.jpg"
 
 
 def time_to_seconds(time):
