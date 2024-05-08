@@ -40,7 +40,7 @@ async def init():
     await userbot.start()
     await Mody.start()
     try:
-        await Mody.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Mody.stream_call("https://graph.org/file/64b768cff9c90461692d5.jpg")
     except NoActiveGroupCall:
         LOGGER("ZeMusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
@@ -50,7 +50,7 @@ async def init():
         pass
     await Mody.decorators()
     LOGGER("ZeMusic").info(
-        "جاري تشغيل البوت\nتم التنصيب على سورس الملك بنجاح\nقناة السورس https://t.me/EF_19"
+        "جاري تشغيل البوت\nتم التنصيب على سورس الملك بنجاح\nقناة السورس https://t.me/O_U_Q1"
     )
     await idle()
     await app.stop()
