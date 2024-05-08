@@ -10,8 +10,6 @@ load_dotenv()
 API_ID = int(getenv("API_ID","20036317"))
 API_HASH = getenv("API_HASH","986cb4ba434870a62fe96da3b5f6d411")
 
-Muntazer = getenv("muntazer", "KKC8C")
-
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME","")
@@ -35,16 +33,16 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    " https://github.com/Ahmad6765874/AMusic",
+    "https://github.com/yousef1yt/AMusic",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-CHANNEL_NAME = getenv("CHANNEL_NAME", "𝚂𝚄𝙾𝚁𝙲𝙴 big Sam")
-CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/@O_U_Q1")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/@O_U_QA")
+CHANNEL_NAME = getenv("CHANNEL_NAME", "𝚂𝚄𝙾𝚁𝙲𝙴 Black")
+CHANNEL_LINK = getenv("CHANNEL_LINK", "https://t.me/KKC8C")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Y_o_v")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -103,14 +101,9 @@ def time_to_seconds(time):
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 
 
-if CHANNEL_LINK:
-    if not re.match("(?:http|https)://", CHANNEL_LINK):
-        raise SystemExit(
-            "[ERROR] - Your CHANNEL_LINK url is wrong. Please ensure that it starts with https://"
-        )
 
 if SUPPORT_CHAT:
     if not re.match("(?:http|https)://", SUPPORT_CHAT):
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
-        )
+)
