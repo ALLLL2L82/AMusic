@@ -69,13 +69,13 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="𖣂 استئناف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
+        ],[ InlineKeyboardButton(text="𖣂 استئناف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="𖣂 ايقاف مؤقت 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
             InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
             InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
-        ],[
+        
     
     return buttons
 
