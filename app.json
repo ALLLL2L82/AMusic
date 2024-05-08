@@ -1,7 +1,7 @@
 {
     "name": "『 Source 𝗕𝗟𝗔𝗖𝗞 | 』",
     "description": "〔 سـورس بلاك 𝚂𝙾𝚄𝚁𝙲𝙴 𝗕𝗟𝗔𝗖𝗞 | 𖤍 \n افضـل سـورس لتشغيل الصوتيات في المكالمه  › تحديثـات متواصله › 〔 حصريـاً 〕\n - مطـور السـورس : 𐇮 َِ𝐓𝐇𝐄 𝐘𝐎𝐔S𝐄F ",
-    "logo": "https://telegra.ph/file/d64e882e61268d454c6c0.jpg",
+    "logo": "https://graph.org/file/64b768cff9c90461692d5.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -36,7 +36,7 @@
       },
       "START_IMG_URL": {
         "description": "رابط صوره start او اتركه كما هو.",
-        "value": "https://telegra.ph/file/d64e882e61268d454c6c0.jpg",
+        "value": "https://graph.org/file/64b768cff9c90461692d5.jpg",
         "required": true
       },
       "MONGO_DB_URI": {
@@ -67,7 +67,7 @@
       },
       "Muntazer": {
         "description": "~  ضع قناة الاشتراك الاجباري ( لاتنسى رفع البوت مشرف في القناة ) .",
-        "value": "KKC8C",
+        "value": "O_U_Q1",
         "required": true
           
       },
@@ -78,7 +78,7 @@
       },
       "CHANNEL_LINK": {
         "description": "رابط قناتك.",
-        "value": "https://t.me/KKC8C",
+        "value": "https://t.me/O_U_Q1",
         "required": true
       },
       "AUTO_LEAVING_ASSISTANT": {
