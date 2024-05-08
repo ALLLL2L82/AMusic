@@ -55,28 +55,35 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "—————————◉"
     buttons = [
-        ],[ InlineKeyboardButton(text="𖣂 استئناف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="𖣂 ايقاف مؤقت 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
+                [
+            InlineKeyboardButton(text="𖣂 استمرار 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
-        ],[  
+        ],[
+            InlineKeyboardButton(text="𖣂 تخطي 𖣂", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],[
             InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
+        ],[
             InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
-        
-    
+    ]
     return buttons
 
 
 def stream_markup(_, chat_id):
     buttons = [
-        
-        ],[ InlineKeyboardButton(text="𖣂 استئناف 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="𖣂 ايقاف مؤقت 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
+        [
+            InlineKeyboardButton(text="𖣂 استمرار 𖣂", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Pause|{chat_id}"),
             InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
+            InlineKeyboardButton(text="𖣂 تخطي 𖣂", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="𖣂 ايقاف 𖣂", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],[
             InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
+        ],[
             InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
-        
-    
+    ]
     return buttons
 
 
@@ -90,7 +97,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"ModyPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
-            ),   
+            ),
         ],
         [
             InlineKeyboardButton(
