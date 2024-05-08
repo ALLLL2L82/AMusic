@@ -27,13 +27,13 @@ async def huhh(client: Client, message: Message):
     await app.download_media(dev.photo.big_file_id, file_name=os.path.join("downloads", "developer.jpg"))
    
     await message.reply_photo(
-        photo="downloads/developer.jpg",
-        caption=f"""<b>⌯ 𝙽𝙰𝙼𝙴 :</b> <a href='https://t.me/{usrnam}'>{name}</a>\n\n<b>⌯ 𝚄𝚂𝙴𝚁 :</b> {usrnam}""",
+        photo="https://graph.org/file/64b768cff9c90461692d5.jpg",
+        caption=f"""<b>⌯ 𝙽𝙰𝙼𝙴 :</b> <a href='https://t.me/O_U_QA>{name}</a>\n\n<b>⌯ 𝚄𝚂𝙴𝚁 :</b> {usrnam}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                         name, url=f"https://t.me/{usrnam}"), 
+                         name, url=f"https://t.me/O_U_Q1"), 
                  ],[
                    InlineKeyboardButton(
                         "•✯ ѕᴏᴜʀᴄᴇ ʙɪɢ ѕᴀᴍ ✯•", url=f"https://t.me/O_U_Q1"),
