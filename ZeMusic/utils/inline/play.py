@@ -61,10 +61,11 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="𖣂 اعاده 𖣂", callback_data=f"ADMIN Replay|{chat_id}"),
         ],[
             InlineKeyboardButton(text="⏤͟͞ َِ⍣⃟َ𝐓𝐇ِ𝐄 𓆩ََِِ𝐘َِْ𝐎ِِ𝐔ًٌُ𝐒𝐄ُِ𝐅𓆪", url=f"https://t.me/y_o_v"),
-        ],[ InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
-        
-    
+
             
+        ],[
+
+             InlineKeyboardButton(text=config.CHANNEL_NAME, url=config.CHANNEL_LINK)],
     ]
     return buttons
 
@@ -93,7 +94,7 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"ModyPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
-            ),
+            ),   
         ],
         [
             InlineKeyboardButton(
